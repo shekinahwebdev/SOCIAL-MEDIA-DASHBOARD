@@ -1,0 +1,35 @@
+:root {
+  --Toggle-linear-gradient: hsl(210, 78%, 56%), hsl(146, 68%, 55%);
+  --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+  --White-BG: hsl(0, 0%, 100%);
+}
+
+.toggle-label {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  width: 45px;
+  height: 23px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+}
+
+.toggle-label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: var(--Very-Dark-Blue-BG);
+  margin: 2.5px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+input {
+  display: none;
+}
