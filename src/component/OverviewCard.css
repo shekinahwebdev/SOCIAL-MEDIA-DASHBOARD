@@ -5,7 +5,7 @@
 
 .overview_card {
   margin-top: 1.5rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 1rem;
   border-radius: 5px;
   background-color: var(--Dark-Desaturated-Blue-Card-BG);
@@ -40,5 +40,9 @@
 }
 
 .current_number {
-  gap: 0.6rem;
+  gap: 0.4rem;
+}
+
+.result_percentage {
+  font-weight: 700;
 }

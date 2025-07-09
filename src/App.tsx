@@ -42,6 +42,7 @@ const App = () => {
               optionUpwardsShapeColor={card.optionUpwardsShapeColor}
               optionDownwardsShapeColor={card.optionDownwardsShapeColor}
               resultPercentage={card.resultPercentage}
+              result={card.result}
             />
           ))}
         </aside>
