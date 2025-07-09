@@ -21,30 +21,53 @@
   --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
 }
 
+:root {
+  --BG: var(--Very-Dark-Blue-BG);
+  --Title-Text: var(--Desaturated-Blue-Text);
+  --SubTitle-Text: var(--Desaturated-Blue-Text);
+  --Card-Title-Text: var(--White-Text);
+  --CardColor: var(--Dark-Desaturated-Blue-Card-BG);
+  --OverviewTitle: var(--White-Text);
+  --OverviewLabel: var(--Desaturated-Blue-Text);
+  --ToggleSwitch: var(--Very-Dark-Blue-BG);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+[data-theme="light"] {
+  --BG: var(--White-BG);
+  --Title-Text: var(--Very-Dark-Blue-Text);
+  --SubTitle-Text: var(--Dark-Grayish-Blue-Text);
+  --Card-Title-Text: var(--Very-Dark-Grayish-Blue-Text);
+  --CardColor: var(--Very-Pale-Blue-Top-BG-Pattern);
+  --OverviewTitle: var(--Dark-Grayish-Blue-Text);
+  --OverviewLabel: var(--Dark-Grayish-Blue-Text);
+  --ToggleSwitch: var(--White-BG);
+}
+
 body {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: var(--Very-Dark-Blue-BG);
+  background-color: var(--BG);
+  justify-content: center;
 }
 
 .main_dashboard {
   padding: 1.5rem 2rem;
 }
 
-.header_title {
+.head_title {
   margin: 2rem 0rem;
-  border-bottom: 1px solid var(--Desaturated-Blue-Text);
+  border-bottom: 1px solid var(--OverviewLabel);
 }
 
 .board_title {
-  color: var(--White-Text);
+  color: var(--Title-Text);
   font-size: 1.5rem;
 }
 
@@ -54,7 +77,7 @@ body {
 
 .total_followers,
 .title {
-  color: var(--Desaturated-Blue-Text);
+  color: var(--SubTitle-Text);
 }
 
 .theme_switcher {

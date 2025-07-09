@@ -19,15 +19,28 @@
   transition: background-image 0.3s ease;
 }
 
+[data-theme="light"] .toggle-label {
+  background-color: hsl(230, 22%, 74%);
+  background-image: none;
+}
+
 .toggle-label::before {
   content: "";
   position: absolute;
   width: 18px;
   height: 18px;
-  background-color: var(--Very-Dark-Blue-BG);
+  background-color: var(--ToggleSwitch);
   margin: 2.5px;
   border-radius: 50%;
   transition: transform 0.3s ease;
+}
+
+input[type="checkbox"]:checked + .toggle-label::after {
+  /* transform: translateX(-10px); */
+}
+
+input[type="checkbox"]:checked + .toggle-label::before {
+  transform: translateX(19px);
 }
 
 input {

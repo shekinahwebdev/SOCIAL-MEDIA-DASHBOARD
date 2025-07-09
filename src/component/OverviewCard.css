@@ -1,5 +1,5 @@
 .overview_title {
-  color: var(--White-Text);
+  color: var(--OverviewTitle);
   font-size: 1.5rem;
 }
 
@@ -8,7 +8,7 @@
   /* border: 2px solid red; */
   padding: 1rem;
   border-radius: 5px;
-  background-color: var(--Dark-Desaturated-Blue-Card-BG);
+  background-color: var(--CardColor);
 }
 
 .overview_card:hover {
@@ -26,7 +26,7 @@
 }
 
 .overview_label {
-  color: var(--Desaturated-Blue-Text);
+  color: var(--OverviewLabel);
 }
 
 .results,
@@ -39,7 +39,7 @@
 }
 
 .result_number {
-  color: var(--White-Text);
+  color: var(--Card-Title-Text);
   font-size: 2rem;
   font-weight: bold;
 }
