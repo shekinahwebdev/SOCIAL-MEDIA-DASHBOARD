@@ -2,6 +2,7 @@ import { MainCard } from "./component/MainCard";
 import { OverviewCard } from "./component/OverviewCard";
 import { ToggleSwitch } from "./component/ToggleSwitch";
 import { cardData } from "./data/cardData";
+import { overviewData } from "./data/overviewData";
 import "/src/App.css";
 
 const App = () => {
@@ -32,7 +33,17 @@ const App = () => {
         </aside>
         <aside className="overview_section">
           <h3 className="overview_title">Overview - Today</h3>
-          <OverviewCard />
+          {overviewData.map((card, index) => (
+            <OverviewCard
+              key={index}
+              platform={card.platform}
+              overviewLabel={card.overviewLabel}
+              changeColor={card.changeColor}
+              optionUpwardsShapeColor={card.optionUpwardsShapeColor}
+              optionDownwardsShapeColor={card.optionDownwardsShapeColor}
+              resultPercentage={card.resultPercentage}
+            />
+          ))}
         </aside>
       </section>
     </main>

@@ -4,5 +4,41 @@
 }
 
 .overview_card {
+  margin-top: 1.5rem;
   border: 2px solid red;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--Dark-Desaturated-Blue-Card-BG);
+}
+
+.overview_top {
+  /* border: 2px solid yellow; */
+  padding: 0.5rem 0rem 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview_label {
+  color: var(--Desaturated-Blue-Text);
+}
+
+.results,
+.current_number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0rem 0.5rem;
+}
+
+.result_number {
+  color: var(--White-Text);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.current_number {
+  gap: 0.6rem;
 }

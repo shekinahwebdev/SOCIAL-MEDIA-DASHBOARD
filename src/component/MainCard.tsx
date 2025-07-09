@@ -23,9 +23,7 @@ export const MainCard: React.FC<MainCardProps> = ({
     <main
       className="main_card"
       style={
-        borderTopGradient
-          ? {} // Don't use border-top if using gradient
-          : { borderTop: `4px solid ${borderTopColor}` }
+        borderTopGradient ? {} : { borderTop: `4px solid ${borderTopColor}` }
       }
     >
       {borderTopGradient && (
