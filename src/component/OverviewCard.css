@@ -11,6 +11,11 @@
   background-color: var(--Dark-Desaturated-Blue-Card-BG);
 }
 
+.overview_card:hover {
+  cursor: pointer;
+  background-color: hsla(228, 34%, 66%, 0.271);
+}
+
 .overview_top {
   /* border: 2px solid yellow; */
   padding: 0.5rem 0rem 0.8rem;
