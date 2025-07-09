@@ -63,3 +63,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.overview_section {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+}

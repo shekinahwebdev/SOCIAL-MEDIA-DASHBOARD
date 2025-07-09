@@ -1,0 +1,8 @@
+.overview_title {
+  color: var(--White-Text);
+  font-size: 1.5rem;
+}
+
+.overview_card {
+  border: 2px solid red;
+}
