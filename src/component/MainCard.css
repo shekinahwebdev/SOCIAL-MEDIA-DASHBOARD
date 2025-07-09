@@ -1,0 +1,109 @@
+:root {
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram-linear-gradient: hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+  --Toggle-linear-gradient: hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --Toggle: hsl(230, 22%, 74%);
+  --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+  --Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
+  --Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+  --Desaturated-Blue-Text: hsl(228, 34%, 66%);
+  --White-Text: hsl(0, 0%, 100%);
+  --White-BG: hsl(0, 0%, 100%);
+  --Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
+  --Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+  --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+  --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+}
+
+.card_container {
+  padding: 1.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main_card {
+  /* border: 2px solid red; */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--Dark-Desaturated-Blue-Card-BG);
+}
+
+.user_details {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+
+.facebook {
+  width: 30px;
+  height: 30px;
+}
+
+.user_name {
+  color: var(--Desaturated-Blue-Text);
+  font-weight: 800;
+}
+
+.followers {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0rem 1.5rem;
+}
+
+.social_followers {
+  color: var(--White-Text);
+  font-size: 4.7rem;
+  font-weight: bold;
+}
+
+.card_border {
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.followers_title {
+  color: var(--Desaturated-Blue-Text);
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 1rem;
+}
+
+.current_day {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.option_shape {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid var(--Lime-Green);
+}
+
+.current_followers {
+  color: var(--White-Text);
+}
