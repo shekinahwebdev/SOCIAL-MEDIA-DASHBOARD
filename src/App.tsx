@@ -31,13 +31,6 @@ const App = () => {
         </div>
       </header>
       <section className="main_board">
-        {/* <div className="theme_switcher">
-          <p className="title">Dark Mode</p>
-          <ToggleSwitch
-            isChecked={isDarkMode}
-            onToggle={() => setIsDarkMode(!isDarkMode)}
-          />
-        </div> */}
         <aside className="card_container">
           {cardData.map((card, index) => (
             <MainCard
@@ -56,18 +49,20 @@ const App = () => {
         </aside>
         <aside className="overview_section">
           <h3 className="overview_title">Overview - Today</h3>
-          {overviewData.map((card, index) => (
-            <OverviewCard
-              key={index}
-              platform={card.platform}
-              overviewLabel={card.overviewLabel}
-              changeColor={card.changeColor}
-              optionUpwardsShapeColor={card.optionUpwardsShapeColor}
-              optionDownwardsShapeColor={card.optionDownwardsShapeColor}
-              resultPercentage={card.resultPercentage}
-              result={card.result}
-            />
-          ))}
+          <div className="overview_maincard_board">
+            {overviewData.map((card, index) => (
+              <OverviewCard
+                key={index}
+                platform={card.platform}
+                overviewLabel={card.overviewLabel}
+                changeColor={card.changeColor}
+                optionUpwardsShapeColor={card.optionUpwardsShapeColor}
+                optionDownwardsShapeColor={card.optionDownwardsShapeColor}
+                resultPercentage={card.resultPercentage}
+                result={card.result}
+              />
+            ))}
+          </div>
         </aside>
       </section>
     </main>

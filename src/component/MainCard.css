@@ -1,8 +1,8 @@
 .card_container {
-  padding: 1.5rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: -2rem;
 }
 
 .main_card {
@@ -15,7 +15,6 @@
   position: relative;
   overflow: hidden;
   background-color: var(--CardColor);
-  max-width: 350px;
 }
 
 .main_card:hover {
@@ -24,7 +23,6 @@
 }
 
 .user_details {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,7 +41,6 @@
 }
 
 .followers {
-  /* border: 2px solid yellow; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,14 +75,6 @@
   justify-content: center;
   gap: 0.5rem;
 }
-/* 
-.option_shape {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--Lime-Green);
-} */
 
 .current_followers {
   font-weight: bold;

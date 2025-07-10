@@ -8,7 +8,6 @@
   padding: 1rem;
   border-radius: 5px;
   background-color: var(--CardColor);
-  max-width: 350px;
 }
 
 .overview_card:hover {
