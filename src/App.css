@@ -30,6 +30,7 @@
   --OverviewTitle: var(--White-Text);
   --OverviewLabel: var(--Desaturated-Blue-Text);
   --ToggleSwitch: var(--Very-Dark-Blue-BG);
+  --ChangeColor: var(--White-Text);
 }
 
 * {
@@ -47,6 +48,7 @@
   --OverviewTitle: var(--Dark-Grayish-Blue-Text);
   --OverviewLabel: var(--Dark-Grayish-Blue-Text);
   --ToggleSwitch: var(--White-BG);
+  --ChangeColor: var(--Lime-Green);
 }
 
 body {
@@ -58,12 +60,20 @@ body {
 }
 
 .main_dashboard {
-  padding: 1.5rem 2rem;
+  /* padding: 1.5rem 2rem; */
+  /* padding: 0rem 2rem; */
 }
 
 .head_title {
-  margin: 2rem 0rem;
+  background-color: var(--Very-Dark-Blue-Top-BG-Pattern);
+  padding: 0rem 2rem 2rem;
+  border: 2px solid green;
+}
+
+.header_top {
   border-bottom: 1px solid var(--OverviewLabel);
+  margin: 2rem 0rem;
+  /* border: 2px solid red; */
 }
 
 .board_title {
@@ -81,7 +91,7 @@ body {
 }
 
 .theme_switcher {
-  /* border: 2px solid red; */
+  /* border: 2px solid yellow; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -91,4 +101,8 @@ body {
   padding: 2rem 0rem;
   display: flex;
   flex-direction: column;
+}
+
+.main_board {
+  padding: 0rem 2rem;
 }

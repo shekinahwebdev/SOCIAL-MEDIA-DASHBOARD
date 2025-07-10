@@ -1,5 +1,21 @@
 import "/src/component/MainCard.css";
 
+const upwardsShape = {
+  width: 0,
+  height: 0,
+  borderLeft: "5px solid transparent",
+  borderRight: "5px solid transparent",
+  borderBottom: "5px solid",
+};
+
+const downwardsShape = {
+  width: 0,
+  height: 0,
+  borderLeft: "5px solid transparent",
+  borderRight: "5px solid transparent",
+  borderTop: "5px solid",
+};
+
 interface MainCardProps {
   platform: string;
   username: string;
@@ -8,6 +24,8 @@ interface MainCardProps {
   changeColor: string;
   borderTopColor: string;
   borderTopGradient: string;
+  optionUpwardsShapeColor?: string;
+  optionDownwardsShapeColor?: string;
 }
 
 export const MainCard: React.FC<MainCardProps> = ({
@@ -18,6 +36,8 @@ export const MainCard: React.FC<MainCardProps> = ({
   changeColor,
   borderTopColor,
   borderTopGradient,
+  optionUpwardsShapeColor,
+  optionDownwardsShapeColor,
 }) => {
   return (
     <main
@@ -41,7 +61,20 @@ export const MainCard: React.FC<MainCardProps> = ({
         <p className="followers_title">Followers</p>
       </div>
       <div className="current_day">
-        <div className="option_shape"></div>
+        <div
+          className="option_shape"
+          style={{
+            ...(optionUpwardsShapeColor
+              ? {
+                  ...upwardsShape,
+                  borderBottom: `5px solid ${optionUpwardsShapeColor}`,
+                }
+              : {
+                  ...downwardsShape,
+                  borderTop: `5px solid ${optionDownwardsShapeColor}`,
+                }),
+          }}
+        ></div>
         <p
           className="current_followers"
           style={{

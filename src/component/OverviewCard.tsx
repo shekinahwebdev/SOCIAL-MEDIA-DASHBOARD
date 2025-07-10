@@ -20,8 +20,8 @@ interface OverviewCardProps {
   platform: string;
   overviewLabel: string;
   changeColor: string;
-  optionUpwardsShapeColor: string;
-  optionDownwardsShapeColor: string;
+  optionUpwardsShapeColor?: string;
+  optionDownwardsShapeColor?: string;
   resultPercentage: number;
   result: string;
 }

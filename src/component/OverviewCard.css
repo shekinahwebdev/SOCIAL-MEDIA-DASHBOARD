@@ -5,10 +5,10 @@
 
 .overview_card {
   margin-top: 1.5rem;
-  /* border: 2px solid red; */
   padding: 1rem;
   border-radius: 5px;
   background-color: var(--CardColor);
+  max-width: 350px;
 }
 
 .overview_card:hover {
@@ -17,7 +17,6 @@
 }
 
 .overview_top {
-  /* border: 2px solid yellow; */
   padding: 0.5rem 0rem 0.8rem;
   display: flex;
   flex-direction: row;

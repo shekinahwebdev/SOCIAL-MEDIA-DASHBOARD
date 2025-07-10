@@ -9,8 +9,9 @@ export const cardData = [
     username: "@nathanf",
     followers: "1987",
     change: 12,
-    changeColor: "var(--White-Text)",
+    changeColor: "var(--ChangeColor)",
     borderTopColor: "hsl(208, 92%, 53%)",
+    optionUpwardsShapeColor: "hsl(163, 72%, 41%)",
     borderTopGradient: "",
   },
   {
@@ -20,6 +21,7 @@ export const cardData = [
     change: 99,
     changeColor: "var(--Lime-Green)",
     borderTopColor: "hsl(203, 89%, 53%)",
+    optionUpwardsShapeColor: "hsl(163, 72%, 41%)",
     borderTopGradient: "",
   },
   {
@@ -28,6 +30,7 @@ export const cardData = [
     followers: "11k",
     change: 1099,
     changeColor: "var(--Lime-Green)",
+    optionUpwardsShapeColor: "hsl(163, 72%, 41%)",
     borderTopColor: "",
     borderTopGradient:
       "linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))",
@@ -38,6 +41,7 @@ export const cardData = [
     followers: "8239",
     change: 144,
     changeColor: "var(--Bright-Red)",
+    optionDownwardsShapeColor: "hsl(356, 69%, 56%)",
     borderTopColor: "hsl(348, 97%, 39%)",
     borderTopGradient: "",
   },

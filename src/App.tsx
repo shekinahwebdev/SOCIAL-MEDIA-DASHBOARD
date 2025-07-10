@@ -16,17 +16,28 @@ const App = () => {
   return (
     <main className="main_dashboard">
       <header className="head_title">
-        <h1 className="board_title">Social Media Dashboard</h1>
-        <p className="total_followers">Total Followers: 23,004</p>
+        <div className="header_subtitle">
+          <div className="header_top">
+            <h1 className="board_title">Social Media Dashboard</h1>
+            <p className="total_followers">Total Followers: 23,004</p>
+          </div>
+          <div className="theme_switcher">
+            <p className="title">Dark Mode</p>
+            <ToggleSwitch
+              isChecked={isDarkMode}
+              onToggle={() => setIsDarkMode(!isDarkMode)}
+            />
+          </div>
+        </div>
       </header>
       <section className="main_board">
-        <div className="theme_switcher">
+        {/* <div className="theme_switcher">
           <p className="title">Dark Mode</p>
           <ToggleSwitch
             isChecked={isDarkMode}
             onToggle={() => setIsDarkMode(!isDarkMode)}
           />
-        </div>
+        </div> */}
         <aside className="card_container">
           {cardData.map((card, index) => (
             <MainCard
@@ -38,6 +49,8 @@ const App = () => {
               changeColor={card.changeColor}
               borderTopColor={card.borderTopColor}
               borderTopGradient={card.borderTopGradient}
+              optionUpwardsShapeColor={card.optionUpwardsShapeColor}
+              optionDownwardsShapeColor={card.optionDownwardsShapeColor}
             />
           ))}
         </aside>
